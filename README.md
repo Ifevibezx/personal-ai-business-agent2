@@ -13,17 +13,18 @@ npm run dev
 
 Open http://localhost:3000.
 
-## Current feature
+## Current features
 
 - AI post generation through `/api/agent`
-- Tone selection
+- Professional, casual, educational, and humorous tones
 - 280-character limit
 - Editable draft review
-- Explicit notice that publishing is not yet connected
+- Save, edit, and delete up to 20 drafts in browser local storage
+- Explicit review-first workflow; nothing is published automatically
 
 ## Next integration steps
 
-1. Add user authentication and database-backed drafts.
+1. Replace local storage with authenticated, database-backed drafts.
 2. Implement X OAuth 2.0 with encrypted access/refresh tokens.
 3. Connect the official X API for publishing.
 4. Add a scheduler and an approval endpoint requiring `confirm: true`.
